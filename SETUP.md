@@ -30,7 +30,7 @@ git push -u origin main
 2. Run:
 ```bash
 cd "/Users/tamkeen.kiani/Research Docs/Data Driven Personas/Planning-Navigator"
-git remote set-url origin git@github.com:Tamkeen022/Planning-Navigator.git
+git remote set-url origin git@github.com:Tamkeen22/Planning-Navigator.git
 git push -u origin main
 ```
 
