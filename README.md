@@ -15,7 +15,7 @@ An interactive questionnaire tool for planning permission assessment. This tool 
 
 This repository is configured for GitHub Pages hosting. The application is available at:
 
-**GitHub Pages URL:** `https://tamkeen022.github.io/Planning-Navigator/`
+**GitHub Pages URL:** `https://tamkeen22.github.io/Planning-Navigator/`
 
 ## Embedding in Webflow
 
@@ -23,7 +23,7 @@ To embed this application in a Webflow iframe, use the following code:
 
 ```html
 <iframe 
-    src="https://tamkeen022.github.io/Planning-Navigator/" 
+    src="https://tamkeen22.github.io/Planning-Navigator/" 
     width="100%" 
     height="800px" 
     frameborder="0" 
@@ -39,7 +39,7 @@ For a responsive iframe that adapts to different screen sizes:
 ```html
 <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%;">
     <iframe 
-        src="https://tamkeen022.github.io/Planning-Navigator/" 
+        src="https://tamkeen22.github.io/Planning-Navigator/" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         frameborder="0"
         allowfullscreen>

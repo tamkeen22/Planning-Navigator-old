@@ -38,7 +38,7 @@ git push -u origin main
 
 After pushing:
 
-1. Go to: https://github.com/Tamkeen022/Planning-Navigator/settings/pages
+1. Go to: https://github.com/Tamkeen22/Planning-Navigator/settings/pages
 2. Under "Source", select:
    - Branch: `main`
    - Folder: `/ (root)`
@@ -48,14 +48,14 @@ After pushing:
 ## GitHub Pages URL
 
 Once enabled, your application will be available at:
-**https://tamkeen022.github.io/Planning-Navigator/**
+**https://tamkeen22.github.io/Planning-Navigator/**
 
 ## Iframe Embed Code for Webflow
 
 ### Standard Embed
 ```html
 <iframe 
-    src="https://tamkeen022.github.io/Planning-Navigator/" 
+    src="https://tamkeen22.github.io/Planning-Navigator/" 
     width="100%" 
     height="800px" 
     frameborder="0" 
@@ -68,7 +68,7 @@ Once enabled, your application will be available at:
 ```html
 <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%; min-height: 800px;">
     <iframe 
-        src="https://tamkeen022.github.io/Planning-Navigator/" 
+        src="https://tamkeen22.github.io/Planning-Navigator/" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         frameborder="0"
         allowfullscreen
@@ -91,6 +91,6 @@ The application has been optimized for iframe embedding:
 ## Testing
 
 After enabling GitHub Pages:
-1. Visit: https://tamkeen022.github.io/Planning-Navigator/
+1. Visit: https://tamkeen22.github.io/Planning-Navigator/
 2. Test the application functionality
 3. Test iframe embedding in a test HTML page or Webflow preview
