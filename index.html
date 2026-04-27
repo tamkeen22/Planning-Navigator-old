@@ -2469,9 +2469,20 @@
 
         // Check if answering this question requires moving to a different group/screen
         function checkIfNeedsGroupChange(qId, option) {
+            let activeGroupId = currentGroupId;
+            let g = groups[currentGroupId];
+            
+            // If we are in an accordion PS flow, the active question might be a PS subquestion
+            if ((currentGroupId === 'EXT' || currentGroupId === 'CONV') && accordionState[currentGroupId]?.mode === 'ps') {
+                const state = accordionState[currentGroupId];
+                if (state.psGroup && groups[state.psGroup]?.questionIds.includes(qId)) {
+                    activeGroupId = state.psGroup;
+                    g = groups[activeGroupId];
+                }
+            }
+
             if (!option || !option.next || option.next.length === 0) {
                 // No explicit next path - check if it's the last question in group
-                const g = groups[currentGroupId];
                 const idxInGroup = g.questionIds.indexOf(qId);
                 if (idxInGroup >= 0 && idxInGroup === g.questionIds.length - 1) {
                     // Last question in group - check if group is complete
@@ -2485,7 +2496,6 @@
             }
             
             const nextQId = option.next[0];
-            const g = groups[currentGroupId];
             
             // If next question is in same group, no group change needed
             if (g.questionIds.includes(nextQId)) {
